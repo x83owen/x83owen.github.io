@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>shhh...</title>
+  <meta property="og:title" content="shhh..." />
+  <meta property="og:description" content="let's not leak, our hard work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://x83owen.github.io/" />
+  <meta property="og:image" content="https://x83owen.github.io/assets/pfp.png" />
+  <meta name="theme-color" content="#FF0000">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+</head>
+
+<body>
+
+  <h1>shhh...</h1>
+  <p>let's not leak</p>
+  <p>our hard work</p>
+  <p>(please wait for this site to be finished)</p>
+  <p>in the mean time, listen to some music</p>
+
+  <audio controls autoplay loop>
+    <source src="https://lumaprojects.github.io/assets/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <p><span id="footer-year"></span> <a>x83owen</a></p>
+
+<script>
+  const startYear = 2026;
+  const currentYear = new Date().getFullYear();
+  const displayYear = startYear === currentYear ? startYear : startYear + "�" + currentYear;
+  document.getElementById('footer-year').textContent = displayYear;
+</script>
+</body>
+</html>
